@@ -191,6 +191,32 @@ Options:
 1,200,000	options at $0.10 per share to August 22, 2028
 1,200,000	options at $0.10 per share to January 2, 2029
 Fully Diluted:	340,703,734 shares
+
+
+Financial Statement for first quarter of 2024 / 1st Quarter Report - Mar 31, 2024.
+Gold Terra Resource Corp.'s Condensed Consolidated Interim Financial Statements for the three months ended March 31, 2024, show a company heavily focused on exploration and development, but with a notable net loss. Here's a summary with more numerical details:
+
+Key Financial Highlights (Three Months Ended March 31, 2024):
+
+Net Loss: The company reported a net loss of $490,371. This compares to a net loss of $486,344 during the same period in 2023.
+
+Cash and Cash Equivalents: Gold Terra held $516,608 in cash and cash equivalents as of March 31, 2024. This represents a significant portion of its liquid assets.
+
+Exploration and Evaluation Assets: These assets totalled $49,856,419 as of March 31, 2024. This is a large and crucial portion of their total assets, representing investments in exploration activities. This also stands in contrast with a relatively small amount of equipment, suggesting the majority of their assets are in the early stages of exploration and discovery.
+
+Share Capital: The company's authorized share capital consists of an unlimited number of common shares. As of March 31, 2024, issued share capital was $67,730,582.
+
+Trade Payables and Accrued Liabilities: Trade payables totalled $1,020,192 as of March 31, 2024. This is a significant portion of current liabilities. A portion of these liabilities are due to related parties, which should be noted.
+
+Deferred Income Tax Liability: This liability totalled $883,900 as of March 31, 2024. This reflects the company's tax position and potential future tax implications.
+
+Exploration Expenditures: While not a direct line item on the statement of financial position, significant exploration expenditures are detailed within the notes. For instance, exploration and evaluation assets, which are substantial, indicate a large amount of spending on various exploration programs.
+
+Stock Options: The company granted options for a total of 8,103,750 shares during the year ended December 31, 2023, and 5,874,063 shares as of March 31, 2024. This represents an increase in the stock options granted to employees and other related parties. This would be considered a potential dilution of current shareholder value.
+
+Financial Statement Summary:
+
+The financial statements reveal a company heavily invested in exploration, reflected in their large exploration and evaluation assets, and associated significant expenditures. The reported net loss suggests that the company is currently not generating revenue from its operations, and therefore, reliance on additional financing is likely. Investors should carefully analyze the details in the accompanying notes to better understand the specifics behind the financial position.
 `,
     messages: coreMessages,
     tools: {

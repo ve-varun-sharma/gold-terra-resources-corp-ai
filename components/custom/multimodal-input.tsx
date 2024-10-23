@@ -21,14 +21,28 @@ import { Textarea } from "../ui/textarea";
 
 const suggestedActions = [
   {
-    title: "Help me book a flight",
-    label: "from San Francisco to London",
-    action: "Help me book a flight from San Francisco to London",
+    title: "Recent News with in Yellowknife? ",
+    label: "of the recent agreement with Newmont",
+    action:
+      "What is the recent news with Gold Terra Announces a 2 Year Extension on Option Agreement with Newmont?",
   },
   {
-    title: "What is the status",
-    label: "of flight BA142 flying tmrw?",
-    action: "What is the status of flight BA142 flying tmrw?",
+    title: "How do I invest?",
+    label: "into Gold Terra Resources Corp",
+    action: "How do I invest into Gold Terra?",
+  },
+
+  {
+    title: "What's recent financial report?",
+    label: "of the 1st Quarter Report - Mar 31, 2024",
+    action:
+      "What is the 1st Quarter Report - Mar 31, 2024 for Gold Terra? Please share a summarize and ensure there's sufficent numbers and stats supporting the summarized information.",
+  },
+  {
+    title: "What's the Share Structure",
+    label: "of the recent shares ",
+    action:
+      "What is the structure of Gold Terra? Please share the information in a well organized and visual table.",
   },
 ];
 
@@ -52,13 +66,13 @@ export function MultimodalInput({
   messages: Array<Message>;
   append: (
     message: Message | CreateMessage,
-    chatRequestOptions?: ChatRequestOptions,
+    chatRequestOptions?: ChatRequestOptions
   ) => Promise<string | null | undefined>;
   handleSubmit: (
     event?: {
       preventDefault?: () => void;
     },
-    chatRequestOptions?: ChatRequestOptions,
+    chatRequestOptions?: ChatRequestOptions
   ) => void;
 }) {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -73,7 +87,9 @@ export function MultimodalInput({
   const adjustHeight = () => {
     if (textareaRef.current) {
       textareaRef.current.style.height = "auto";
-      textareaRef.current.style.height = `${textareaRef.current.scrollHeight + 0}px`;
+      textareaRef.current.style.height = `${
+        textareaRef.current.scrollHeight + 0
+      }px`;
     }
   };
 
@@ -135,7 +151,7 @@ export function MultimodalInput({
         const uploadPromises = files.map((file) => uploadFile(file));
         const uploadedAttachments = await Promise.all(uploadPromises);
         const successfullyUploadedAttachments = uploadedAttachments.filter(
-          (attachment) => attachment !== undefined,
+          (attachment) => attachment !== undefined
         );
 
         setAttachments((currentAttachments) => [
@@ -148,7 +164,7 @@ export function MultimodalInput({
         setUploadQueue([]);
       }
     },
-    [setAttachments],
+    [setAttachments]
   );
 
   return (
@@ -257,7 +273,7 @@ export function MultimodalInput({
         </Button>
       )}
 
-      <Button
+      {/* <Button
         className="rounded-full p-1.5 h-fit absolute bottom-2 right-10 m-0.5 dark:border-zinc-700"
         onClick={(event) => {
           event.preventDefault();
@@ -267,7 +283,7 @@ export function MultimodalInput({
         disabled={isLoading}
       >
         <PaperclipIcon size={14} />
-      </Button>
+      </Button> */}
     </div>
   );
 }

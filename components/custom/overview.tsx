@@ -20,26 +20,20 @@ export const Overview = () => {
           <MessageIcon />
         </p>
         <p>
-          This is an open source Chatbot template powered by the Google Gemini
-          model built with Next.js and the AI SDK by Vercel. It uses the{" "}
-          <code className="rounded-sm bg-muted-foreground/15 px-1.5 py-0.5">
-            streamText
-          </code>{" "}
-          function in the server and the{" "}
-          <code className="rounded-sm bg-muted-foreground/15 px-1.5 py-0.5">
-            useChat
-          </code>{" "}
-          hook on the client to create a seamless chat experience.
+          Terra is an AI chatbot designed to provide comprehensive information
+          about Gold Terra Resource Corp., helping investors and mining
+          professionals understand the company&apos;s exploration plans, and
+          potential.
         </p>
         <p>
           {" "}
-          You can learn more about the AI SDK by visiting the{" "}
+          You can learn more about Gold Terra Resources Corp by visiting their{" "}
           <Link
             className="text-blue-500 dark:text-blue-400"
-            href="https://sdk.vercel.ai/docs"
+            href="https://goldterracorp.com/"
             target="_blank"
           >
-            Docs
+            website
           </Link>
           .
         </p>
